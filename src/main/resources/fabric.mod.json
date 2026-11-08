@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mca",
+  "version": "${version}",
+  "name": "MCA",
+  "description": "Minecraft Arena - a free ranked online speedrun experience.",
+  "authors": [
+    "MCA Project"
+  ],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.mca.MCA"
+    ],
+    "client": [
+      "com.mca.client.MCAClient"
+    ]
+  },
+  "mixins": [
+    "mca.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "${minecraft_version}",
+    "java": ">=8",
+    "fabric": "*"
+  }
+}
